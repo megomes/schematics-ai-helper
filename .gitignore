@@ -11,3 +11,4 @@ dist-ssr
 specs/
 CLAUDE.md
 .claude/
+.cursor-rules.md
