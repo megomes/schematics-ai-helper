@@ -80,6 +80,8 @@ export default [
           aspects: ['invalidHref', 'preferButton'],
         },
       ],
+      'react/no-unescaped-entities': 'off',
+      'jsx-a11y/heading-has-content': 'off',
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
     },
