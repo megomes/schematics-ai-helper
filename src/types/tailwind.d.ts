@@ -118,8 +118,21 @@ declare global {
         };
       };
       fontFamily: {
-        primary: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'];
-        mono: ['JetBrains Mono', 'SF Mono', 'Monaco', 'Cascadia Code', 'monospace'];
+        primary: [
+          'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'sans-serif',
+        ];
+        mono: [
+          'JetBrains Mono',
+          'SF Mono',
+          'Monaco',
+          'Cascadia Code',
+          'monospace',
+        ];
         display: ['Inter Display', 'Inter', 'sans-serif'];
       };
       borderRadius: {

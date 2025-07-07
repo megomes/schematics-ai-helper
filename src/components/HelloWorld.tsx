@@ -4,10 +4,10 @@ interface HelloWorldProps {
   variant?: 'default' | 'primary' | 'circuit' | 'ai';
 }
 
-function HelloWorld({ 
-  text = "Circuit AI Assistant", 
-  className = "", 
-  variant = 'default' 
+function HelloWorld({
+  text = 'Circuit AI Assistant',
+  className = '',
+  variant = 'default',
 }: HelloWorldProps) {
   const getVariantClasses = () => {
     switch (variant) {
@@ -23,30 +23,32 @@ function HelloWorld({
   };
 
   return (
-    <div className="text-center space-y-4">
-      <h1 className={`text-4xl font-bold font-display leading-tight transition-colors duration-300 ${getVariantClasses()} ${className}`}>
+    <div className="space-y-4 text-center">
+      <h1
+        className={`font-display text-4xl font-bold leading-tight transition-colors duration-300 ${getVariantClasses()} ${className}`}
+      >
         {text}
       </h1>
-      <div className="flex gap-4 justify-center text-sm font-mono">
+      <div className="flex justify-center gap-4 font-mono text-sm">
         <span className="circuit-input">Input</span>
         <span className="text-gray-400">→</span>
         <span className="circuit-signal">Process</span>
         <span className="text-gray-400">→</span>
         <span className="circuit-output">Output</span>
       </div>
-      <div className="flex gap-2 justify-center">
-        <div className="card text-xs p-2">
+      <div className="flex justify-center gap-2">
+        <div className="card p-2 text-xs">
           <div className="ai-claude">Claude</div>
         </div>
-        <div className="card text-xs p-2">
+        <div className="card p-2 text-xs">
           <div className="ai-chatgpt">ChatGPT</div>
         </div>
-        <div className="card text-xs p-2">
+        <div className="card p-2 text-xs">
           <div className="ai-thinking">Processing</div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default HelloWorld 
+export default HelloWorld;

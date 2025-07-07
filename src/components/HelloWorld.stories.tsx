@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import HelloWorld from './HelloWorld';
 
 const meta: Meta<typeof HelloWorld> = {
@@ -10,9 +11,9 @@ const meta: Meta<typeof HelloWorld> = {
       default: 'dark',
       values: [
         { name: 'dark', value: '#111827' },
-        { name: 'light', value: '#f9fafb' }
-      ]
-    }
+        { name: 'light', value: '#f9fafb' },
+      ],
+    },
   },
   tags: ['autodocs'],
   argTypes: {
@@ -76,4 +77,4 @@ export const WithCustomStyles: Story = {
     variant: 'circuit',
     className: 'text-6xl',
   },
-}; 
+};

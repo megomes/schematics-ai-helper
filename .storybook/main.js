@@ -11,4 +11,4 @@ const config = {
     options: {},
   },
 };
-export default config; 
+export default config;
