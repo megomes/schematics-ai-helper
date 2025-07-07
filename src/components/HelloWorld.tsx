@@ -4,23 +4,28 @@ interface HelloWorldProps {
 
 export default function HelloWorld({ variant }: HelloWorldProps) {
   if (variant === 'primary') {
-    //
+    // Primary variant styling could go here
   }
+
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Circuit AI Assistant</h1>
       <p>
-        <span>Input</span> → <span>Process</span> → <span>Output</span>
+        <strong>Input</strong> → <strong>AI Process</strong> →{' '}
+        <strong>Circuit Output</strong>
       </p>
-      <div>
-        <div>
-          <p>Claude</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <div className="p-4 border rounded-lg bg-card">
+          <p className="font-semibold">Claude</p>
+          <small>AI Assistant</small>
         </div>
-        <div>
-          <p>ChatGPT</p>
+        <div className="p-4 border rounded-lg bg-card">
+          <p className="font-semibold">ChatGPT</p>
+          <small>AI Assistant</small>
         </div>
-        <div>
-          <p>Thinking</p>
+        <div className="p-4 border rounded-lg bg-card">
+          <p className="font-semibold">Circuit Design</p>
+          <small>AI Generated</small>
         </div>
       </div>
     </div>
