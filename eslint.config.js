@@ -141,13 +141,7 @@ export default [
     },
   },
   {
-    files: [
-      'vite.config.*',
-      'tailwind.config.*',
-      'postcss.config.*',
-      'eslint.config.*',
-      '.storybook/**/*',
-    ],
+    files: ['vite.config.*', 'eslint.config.*', '.storybook/**/*'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',

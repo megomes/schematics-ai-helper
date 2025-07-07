@@ -8,8 +8,5 @@
   "bracketSpacing": true,
   "bracketSameLine": false,
   "arrowParens": "avoid",
-  "endOfLine": "lf",
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindConfig": "./tailwind.config.js",
-  "tailwindFunctions": ["clsx", "cn", "cva"]
+  "endOfLine": "lf"
 }

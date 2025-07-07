@@ -7,27 +7,12 @@ const meta: Meta<typeof HelloWorld> = {
   component: HelloWorld,
   parameters: {
     layout: 'centered',
-    backgrounds: {
-      default: 'dark',
-      values: [
-        { name: 'dark', value: '#111827' },
-        { name: 'light', value: '#f9fafb' },
-      ],
-    },
   },
   tags: ['autodocs'],
   argTypes: {
-    text: {
-      control: 'text',
-      description: 'The text to display',
-    },
-    className: {
-      control: 'text',
-      description: 'Additional CSS classes',
-    },
     variant: {
       control: 'select',
-      options: ['default', 'primary', 'circuit', 'ai'],
+      options: ['primary', 'secondary', 'accent', 'muted', 'warning'],
       description: 'Visual variant style',
     },
   },
@@ -38,43 +23,36 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: 'Circuit AI Assistant',
-    variant: 'default',
+    variant: 'primary',
   },
 };
 
 export const Primary: Story = {
   args: {
-    text: 'Circuit AI Assistant',
     variant: 'primary',
   },
 };
 
-export const Circuit: Story = {
+export const Secondary: Story = {
   args: {
-    text: 'Signal Processing',
-    variant: 'circuit',
+    variant: 'secondary',
   },
 };
 
-export const AI: Story = {
+export const Accent: Story = {
   args: {
-    text: 'AI Processing',
-    variant: 'ai',
+    variant: 'accent',
   },
 };
 
-export const CustomText: Story = {
+export const Muted: Story = {
   args: {
-    text: 'Design System Demo',
-    variant: 'primary',
+    variant: 'muted',
   },
 };
 
-export const WithCustomStyles: Story = {
+export const Warning: Story = {
   args: {
-    text: 'Custom Styled',
-    variant: 'circuit',
-    className: 'text-6xl',
+    variant: 'warning',
   },
 };
