@@ -26,33 +26,3 @@ export const Default: Story = {
     variant: 'primary',
   },
 };
-
-export const Primary: Story = {
-  args: {
-    variant: 'primary',
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    variant: 'secondary',
-  },
-};
-
-export const Accent: Story = {
-  args: {
-    variant: 'accent',
-  },
-};
-
-export const Muted: Story = {
-  args: {
-    variant: 'muted',
-  },
-};
-
-export const Warning: Story = {
-  args: {
-    variant: 'warning',
-  },
-};
